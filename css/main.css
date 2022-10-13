@@ -422,8 +422,19 @@ p {
   padding: 60px 0;
 }
 
+.footer-logo {
+  margin-bottom: 20px;
+}
+
 .col {
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .tablet {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
 }
 
 .content__link {
@@ -455,6 +466,15 @@ p {
   letter-spacing: 0.03em;
   color: #FFFFFF;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .subtitle {
+    margin-top: 0;
+  }
+}
+
+.subtitle-second {
+  margin-top: 60px;
 }
 
 .aside {

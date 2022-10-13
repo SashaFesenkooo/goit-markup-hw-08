@@ -474,8 +474,24 @@ p {
     padding: 60px 0;
 }       
 
+.footer-logo{
+margin-bottom: 20px;
+}
+
 .col {
   text-align: center;
+
+  @media screen and (min-width: 768px){
+    
+  }
+}
+
+.tablet{
+  @media screen and (min-width: 768px){
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  }
 }
 
 .content{
@@ -516,6 +532,14 @@ p {
   letter-spacing: 0.03em;
   color: $nav-color;
   text-align: center;
+
+  @media screen and (min-width: 768px){
+    margin-top: 0;
+  }
+}
+
+.subtitle-second{
+  margin-top: 60px;
 }
 
 .aside {
