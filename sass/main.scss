@@ -407,6 +407,7 @@ p {
     &__link:hover,
     &__link:focus {
         border-color: $logo-color;
+        outline: none;
     }
 
     &__logo {
@@ -478,11 +479,20 @@ p {
 margin-bottom: 20px;
 }
 
-.col {
-  text-align: center;
+.meta {
+  @media screen and(min-width: 1200px) {
+  display: flex;
+  align-items: baseline;
+  }
+}
 
-  @media screen and (min-width: 768px){
-    
+.col {
+  @media screen and (max-width: 1199px){
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px){
+    margin-right: 70px;
   }
 }
 
@@ -491,6 +501,10 @@ margin-bottom: 20px;
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
+  }
+
+  @media screen and (min-width: 1200px){
+    align-items: baseline;
   }
 }
 
@@ -513,6 +527,10 @@ margin-bottom: 20px;
 .content__list{
   &:not(:last-child){
     margin-bottom: 8px;
+
+    @media screen and(min-width: 1200px){
+      margin-bottom: 9px;
+    }
   }
 }
 
@@ -536,10 +554,16 @@ margin-bottom: 20px;
   @media screen and (min-width: 768px){
     margin-top: 0;
   }
+
+  @media screen and (min-width: 1200px){
+    text-align: left;
+  }
 }
 
 .subtitle-second{
-  margin-top: 60px;
+  @media screen and(min-width: 768px) and(max-width: 1199px) {
+    margin-top: 60px;
+  }
 }
 
 .aside {
@@ -572,6 +596,12 @@ margin-bottom: 20px;
   }
 }
 
+.distribution {
+  @media screen and(min-width: 1200px) {
+    margin-left: 93px;
+  }
+}
+
 .grid{
   &__input {
     display: block;
@@ -588,6 +618,16 @@ margin-bottom: 20px;
     color: rgba(255, 255, 255, 0.6);
     letter-spacing: 0.03em;
     line-height: 1.25;
+
+    @media screen and(min-width: 1200px){
+      width: 358px;
+      margin: 20px 12px 0 0;
+    }
+}
+
+@media screen and(min-width: 1200px){
+  display: flex;
+  align-items: baseline;
 }
 }
 
