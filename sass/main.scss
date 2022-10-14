@@ -133,6 +133,10 @@ p {
   width: 100%;
   }
 
+  @media screen and(min-width: 768px){
+    display: flex;
+  }
+
   &.is-open{
     display: block;
   }
@@ -370,6 +374,10 @@ p {
         align-items: center;
         margin-bottom: 31px;
         cursor: pointer;
+
+        @media screen and(min-width: 1200px) {
+          margin-bottom: 30px;
+        }
     }
 
     &__checkbox {
@@ -401,6 +409,7 @@ p {
 
       @media screen and(min-width: 1200px) {
         line-height: 1.71;
+        font-size: 14px;
       }  
     }
 
@@ -412,6 +421,7 @@ p {
 
         @media screen and(min-width: 1200px) {
         line-height: 1.71;
+        font-size: 14px;
       }  
     }
 } 
@@ -429,6 +439,11 @@ p {
     line-height: 1.14;
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
+
+    @media screen and(min-width: 1200px){
+      font-size: 12px;
+      line-height: 1.17;
+    }
   }
 
   &:hover,
@@ -580,6 +595,12 @@ p {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.16;
+    margin-bottom: 50px;
+  }
 }            
 
 .team {
