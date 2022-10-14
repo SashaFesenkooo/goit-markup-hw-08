@@ -58,6 +58,7 @@ p {
   }
 }
 
+
                                   // Header
 
 .header {
@@ -533,11 +534,14 @@ p {
 }
 
   &__text {
-    margin-bottom: 30px;
     color: #757575;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+
+    &__text:not(:last-child){
+    margin-bottom: 30px;
+    }
   }
 }
 

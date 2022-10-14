@@ -516,11 +516,13 @@ p {
   text-align: center;
 }
 .post__text {
-  margin-bottom: 30px;
   color: #757575;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+.post__text__text:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 @media screen and (max-width: 1199px) {
