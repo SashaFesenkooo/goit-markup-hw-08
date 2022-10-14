@@ -213,6 +213,25 @@ p {
   }
 }
 
+.list-social {
+  display: flex;
+  margin-top: 64px;
+}
+.list-social__item {
+  margin-right: 20px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+}
+.list-social__item ::after {
+  content: "";
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  width: 22px;
+  transform: rotate(90deg);
+}
+
 .hero {
   padding: 118px 0;
   background-color: #2F303A;
