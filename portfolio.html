@@ -21,38 +21,56 @@
     <!-- Header -->
     <header class="header">
       <div class="container flex-container">
-        <nav class="flex-container">
+        <nav class="header-wrap">
           <a href="#" class="logo">Web<span class="logo__text">Studio</span></a>
-          <ul class="site-nav flex-container">
+          <button
+            type="button"
+            class="menu-button is-open"
+            aria-expanded="false"
+            data-menu-button
+          >
+            <svg width="24" height="16" class="cross" aria-label="Перекмикає мобільне меню">
+              <use class="icon-menu" href="./images/icons.svg#icon-cross"></use>
+              <use class="icon-cross" href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+        </nav>
+
+        <div class="menu-container" data-menu>
+          <ul class="site-nav">
             <li class="site-nav__list">
-              <a href="./index.html" class="site-nav__link">Студія</a>
+              <a href="./index.html" class="site-nav__link"
+                >Студія</a
+              >
             </li>
             <li class="site-nav__list">
-              <a href="#" class="site-nav__link site-nav__link--current"
-                >Портфоліо</a
-              >
+              <a href="#" class="site-nav__link site-nav__link--current">Портфоліо</a>
             </li>
             <li class="site-nav__list">
               <a href="#" class="site-nav__link">Контакти</a>
             </li>
           </ul>
-        </nav>
-        <ul class="auth-nav flex-container">
-          <li class="auth-nav__list">
-            <a href="mailto:info@devstudio.com" class="auth-nav__copy"
-              ><svg width="16" height="12" class="auth-nav__envelope">
-                <use xlink:href="./images/icons.svg#icon-envelope"></use></svg
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="auth-nav__list">
-            <a href="tel:+380961111111" class="auth-nav__copy"
-              ><svg width="10" height="16" class="auth-nav__smartphone">
-                <use xlink:href="./images/icons.svg#icon-smartphone"></use></svg
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+
+          <ul class="auth-nav">
+            <li class="auth-nav__list">
+              <a href="mailto:info@devstudio.com" class="auth-nav__copy"
+                ><svg width="16" height="12" class="auth-nav__envelope">
+                  <use xlink:href="./images/icons.svg#icon-envelope"></use></svg
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="auth-nav__list auth-nav__list--upper">
+              <a
+                href="tel:+380961111111"
+                class="auth-nav__copy auth-nav__copy--tel"
+                ><svg width="10" height="16" class="auth-nav__smartphone">
+                  <use
+                    xlink:href="./images/icons.svg#icon-smartphone"
+                  ></use></svg
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
       </div>
     </header>
     <main>
