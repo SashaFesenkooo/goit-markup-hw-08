@@ -1,0 +1,70 @@
+body {
+    color: #212121;
+    background-color: #FFFFFF;
+    font-family: "Roboto", sans-serif;
+}
+
+body.modal-open {
+    overflow: hidden;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.container {
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @media screen and (min-width: $mobile) {
+        width: $mobile ;
+    }
+
+    @media screen and (min-width: $tablet) {
+        width: $tablet ;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: $desktop ;
+    }
+}
+
+.section {
+    padding: 60px 0;
+
+    @media screen and (min-width: $desktop) {
+        padding: 94px 0;
+    }
+}
+
+.section.wrap {
+    @media screen and (min-width: $desktop) {
+        padding-top: 0;
+    }
+}
+
+.container.flex-container {
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.visually-hidden {
+    transform: scale(0);
+}

@@ -1,0 +1,110 @@
+.clients {
+    display: flex;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    &__list {
+        width: calc(50% - 30px / 2);
+
+        @media screen and (min-width: $tablet) {
+            width: calc(33.33% - 60px / 3);
+        }
+
+        @media screen and (min-width: $desktop) {
+            width: calc(100% - 150px / 6);
+
+        }
+    }
+
+    &__link {
+        display: flex;
+
+        height: 92px;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid $icons-color;
+        border-radius: 4px;
+
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__link:hover &__logo,
+    &__link:focus &__logo {
+        fill: $logo-color;
+    }
+
+    &__link:hover,
+    &__link:focus {
+        border-color: $logo-color;
+        outline: none;
+    }
+
+    &__logo {
+        display: block;
+        fill: $icons-color;
+
+        transition-duration: 250ms;
+        transition-property: fill;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+.clients__list {
+    &:nth-child(odd) {
+        margin-right: 30px;
+
+
+    }
+
+    &:nth-child(-n+4) {
+        margin-bottom: 30px;
+    }
+
+    &:nth-child(1) {
+        @media screen and (min-width: $tablet) {
+            margin-right: 30px;
+        }
+
+        @media screen and (min-width: $desktop) {
+            margin-bottom: 0;
+        }
+    }
+
+    &:nth-child(2) {
+        @media screen and (min-width: $tablet) {
+            margin-right: 30px;
+        }
+
+        @media screen and (min-width: $desktop) {
+            margin-bottom: 0;
+        }
+    }
+
+    &:nth-child(3) {
+        @media screen and (min-width: $tablet) {
+            margin-right: 0;
+        }
+
+        @media screen and (min-width: $desktop) {
+            margin-right: 30px;
+            margin-bottom: 0;
+        }
+    }
+
+    &:nth-child(4) {
+        @media screen and (min-width: $tablet) {
+            margin-right: 30px;
+            margin-bottom: 0;
+        }
+    }
+
+    &:nth-child(5) {
+        @media screen and (min-width: $tablet) {
+            margin-right: 30px;
+        }
+    }
+}

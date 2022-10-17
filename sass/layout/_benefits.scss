@@ -1,0 +1,64 @@
+.post {
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: $desktop) {
+        flex-wrap: nowrap;
+    }
+
+    &__list {
+        @media screen and (min-width: $tablet) {
+            width: calc(50% - 30px / 2);
+        }
+
+        @media screen and (min-width: $desktop) {
+            width: calc(100% - 90px / 4);
+        }
+    }
+
+    &__list:nth-child(odd) {
+        @media screen and (min-width: $tablet) {
+            margin-right: 30px;
+        }
+    }
+
+    &__list:not(:last-child) {
+        @media screen and (min-width: $desktop) {
+            margin-right: 30px;
+        }
+    }
+
+    &__svg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #F5F4FA;
+        height: 120px;
+        margin-bottom: 30px;
+        border-radius: 4px;
+    }
+
+    &__title {
+        margin-bottom: 10px;
+        color: #212121;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    &__text {
+        color: #757575;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+
+        &__text:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+}
