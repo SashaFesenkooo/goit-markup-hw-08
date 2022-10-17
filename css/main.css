@@ -117,7 +117,7 @@ p {
     top: 0;
     left: 0;
     width: 100%;
-    min-height: 100vh;
+    height: 100%;
   }
   .menu-container.is-open {
     display: block;
@@ -460,7 +460,6 @@ p {
 }
 
 .header {
-  position: relative;
   border-bottom: 1px solid #ECECEC;
 }
 @media (min-width: 480px) and (max-width: 767px) {
