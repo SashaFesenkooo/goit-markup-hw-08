@@ -780,6 +780,11 @@ img {
     margin-right: 30px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .post__list:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
 .post__svg {
   display: flex;
   justify-content: center;
