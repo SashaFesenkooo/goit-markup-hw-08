@@ -1265,6 +1265,12 @@ img {
     margin: 15px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .projects__item {
+    width: calc((100% - 90px) / 3);
+    margin: 15px;
+  }
+}
 .projects__link {
   text-decoration: none;
   display: block;
@@ -1304,10 +1310,19 @@ img {
   letter-spacing: 0.03em;
   color: #FFFFFF;
 }
-@media screen and (max-width: 768) {
+@media screen and (max-width: 767px) {
   .wrapper__text {
     width: 402px;
-    height: 140px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .wrapper__text {
+    width: 306px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .wrapper__text {
+    width: 322px;
   }
 }
 .wrapper__description {
